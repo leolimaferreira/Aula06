@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aula06</string>
+    <string name="Comum">Ingresso Comum</string>
+    <string name="VIP">Ingresso VIP</string>
+    <string name="Codigo">Insira o código do ingresso:</string>
+    <string name="Valor">Insira o valor do ingresso:</string>
+    <string name="ValorFinal">Valor Final</string>
+    <string name="Funcao">Insira sua função:</string>
+    <string name="Taxa">Nossa taxa de conveniência é de 15%</string>
+    <string name="Voltar">Voltar</string>
+    <string name="CodId">Código Identificação: </string>
+    <string name="ValorSaida">Valor final com as taxas: R$</string>
+    <string name="Func">Função: </string>
+    <string name="SemFuncao">Função: Telespectador</string>
+</resources>

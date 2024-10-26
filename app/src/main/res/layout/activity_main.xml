@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/etCodigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbComum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Comum" />
+
+        <RadioButton
+            android:id="@+id/rbVIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/VIP" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="0dp"
+        android:importantForAutofill="no"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/Codigo"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etValor"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/tvTaxa"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="wrap_content"
+        android:importantForAutofill="no"
+        android:layout_height="48dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/Valor"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etFuncao"
+        app:layout_constraintEnd_toEndOf="@+id/etFuncao"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigo" />
+
+    <Button
+        android:id="@+id/btnValorFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="289dp"
+        android:text="@string/ValorFinal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTaxa" />
+
+    <TextView
+        android:id="@+id/tvTaxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:text="@string/Taxa"
+        android:textColorHint="#EA0505"
+        app:layout_constraintBottom_toTopOf="@+id/btnValorFinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFuncao" />
+
+    <EditText
+        android:id="@+id/etFuncao"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/Funcao"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvTaxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
